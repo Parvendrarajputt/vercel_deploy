@@ -30,23 +30,22 @@ const About = () => {
         <Box>
             <Banner/>
             <Wrapper>
-                <Typography variant="h3">Code for Interview</Typography>
-                <Text variant="h5">I'm a Software Engineer based in India. 
-                    I've built websites, desktop applications and corporate software.<br />
-                    If you are interested, you can view some of my favorite projects here
+                <Typography variant="h3">Blog -Application</Typography>
+                <Text variant="h5">
+"Welcome to Blog Application , where the power of words meets the limitless potential of the internet. Our platform is a vibrant and inclusive community that celebrates the art of blogging, where your unique stories, insights, and creativity find their voice. Whether you're an aspiring writer, a seasoned blogger, or simply someone with a story to tell, we invite you to be part of our diverse and supportive family. Blogging is not just a hobby; it's a canvas for your passions and a bridge to connect with a global audience. Join us in this exhilarating journey of self-expression, connection, and discovery. Your words have the power to inspire, educate, and entertain, and we're here to help you share them with the world."
                     <Box component="span" style={{ marginLeft: 5 }}>
-                        <Link href="https://github.com/kunaltyagi9" color="inherit" target="_blank"><GitHub /></Link>
+                        <Link href="https://github.com/Parvendrarajputt" color="inherit" target="_blank"><GitHub /></Link>
                     </Box>
                 </Text>
                 <Text variant="h5">
-                    Need something built or simply want to have chat? Reach out to me on
+                    Reach out to me on
                     <Box component="span" style={{ marginLeft: 5 }}>
-                        <Link href="https://www.instagram.com/codeforinterview/" color="inherit" target="_blank">
+                        <Link href="https://www.instagram.com/wesle_y__/" color="inherit" target="_blank">
                             <Instagram />
                         </Link>
                     </Box>  
                         or send me an Email 
-                        <Link href="mailto:codeforinterview@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
+                        <Link href="mailto:prvenrjputs@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
                             <Email />
                         </Link>.
                 </Text>
