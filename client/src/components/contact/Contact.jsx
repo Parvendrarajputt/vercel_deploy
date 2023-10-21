@@ -68,6 +68,7 @@ const Wrapper = styled(Box)`
 const Text = styled(Typography)`
     color: #878787;
 `;
+// modified
 
 const Contact = () => {
     return (
