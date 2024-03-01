@@ -33,5 +33,6 @@ export const getImage = async (request, response) => {
         readStream.pipe(response);
     } catch (error) {
         response.status(500).json({ msg: error.message });
+        console.log("The problem is with getimage Function")
     }
 }
