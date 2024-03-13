@@ -11,12 +11,17 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors({
+    origin: ["http://deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
+
 // Middleware
-app.use(cors());
-app.use(bodyParser.json({ limit: '10mb', extended: true })); 
-// i can upload the upto 10 mb photos withoulad playload error 
+app.use(bodyParser.json({ limit: '10mb', extended: true }));
+// I can upload the up to 10 MB photos without payload error 
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
- // Increase payload size limit for URL-encoded
+// Increase payload size limit for URL-encoded
 app.use('/', Router);
 
 const PORT = 8000;
