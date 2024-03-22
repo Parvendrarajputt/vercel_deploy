@@ -17,8 +17,13 @@ app.use(cors({
 }));
 
 
+
 // Middleware
 app.use(cors());
+
+app.get('/', (req, res) => {
+  res.json({ message: 'hello' });
+});
 app.use(bodyParser.json({ limit: '10mb', extended: true })); 
 // i can upload the upto 10 mb photos withoulad playload error 
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
