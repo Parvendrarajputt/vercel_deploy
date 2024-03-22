@@ -16,7 +16,7 @@ import Login from './components/account/Login';
 
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
   const token = sessionStorage.getItem('accessToken');
-  return isAuthenticated && token ? 
+  return isAuthenticated && token ?
     <>
       <Header />
       <Outlet />
@@ -32,30 +32,30 @@ function App() {
       <BrowserRouter>
         <Box style={{ marginTop: 64 }}>
           <Routes>
-            <Route path='vercel-deploy-lemon-five.vercel.app/account' element={<Login isUserAuthenticated={isUserAuthenticated} />} />
-            
-            <Route path='/' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='/' element={<Home />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app/account' element={<Login isUserAuthenticated={isUserAuthenticated} />} />
+
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app/' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app/' element={<Home />} />
             </Route>
 
-            <Route path='vercel-deploy-lemon-five.vercel.app/create' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='vercel-deploy-lemon-five.vercel.app/create' element={<CreatePost />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app/create' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app/create' element={<CreatePost />} />
             </Route>
 
-            <Route path='vercel-deploy-lemon-five.vercel.app/details/:id' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='vercel-deploy-lemon-five.vercel.app/details/:id' element={<DetailView />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app/:id' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app/details/:id' element={<DetailView />} />
             </Route>
 
-            <Route path='vercel-deploy-lemon-five.vercel.app/update/:id' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='vercel-deploy-lemon-five.vercel.app/update/:id' element={<Update />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app/update/:id' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app/:id' element={<Update />} />
             </Route>
 
-            <Route path='vercel-deploy-lemon-five.vercel.app/about' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='vercel-deploy-lemon-five.vercel.app/about' element={<About />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app//about' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app//about' element={<About />} />
             </Route>
 
-            <Route path='vercel-deploy-lemon-five.vercel.app/contact' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='vercel-deploy-lemon-five.vercel.app/contact' element={<Contact />} />
+            <Route path='https://vercel-deploy-vert-gamma.vercel.app//contact' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
+              <Route path='https://vercel-deploy-vert-gamma.vercel.app//contact' element={<Contact />} />
             </Route>
           </Routes>
         </Box>
